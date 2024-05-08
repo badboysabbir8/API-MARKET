@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API MARKET UPLOAD</title>
+    <style>
+        body {
+            background-image: url('https://files.catbox.moe/mjyhks.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 15px;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-top: 50px;
+            color: #fff;
+        }
+        form {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        label, input[type="text"], input[type="url"], input[type="button"], input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="url"] {
+            height: 34px;
+            padding: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="button"], input[type="submit"] {
+            width: auto;
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: 0;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="button"]:hover, input[type="submit"]:hover {
+            opacity: 0.9;
+        }
+        #addApiForm {
+            margin-bottom: 30px;
+        }
+        .copy-button {
+            display: inline-block;
+            margin-left: 10px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #searchResults > div {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your API Endpoint</h1>
+        <form id="addApiForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" required>
+
+            <label for="link">API Link:</label>
+            <input type="url" id="link" name="link" required>
+
+            <label for="apiOwner">API Owner:</label>
+            <input type="text" id="apiOwner" name="apiOwner" required>
+
+            <input type="button" value="Upload" onclick="submitForm()">
+        </form>
+
+        <!-- Search Bar -->
+        <h2>Search for an API Endpoint</h2>
+        <input type="text" id="search" placeholder="Search API">
+        <input type="button" value="Search" onclick="searchApiEndpoint()">
+        <input type="button" value="Show All Endpoints" onclick="searchApiEndpoint(true)">
+
+        <!-- Search Results -->
+        <div id="searchResults"></div>
+    </div>
+
+    <script>
+        function submitForm() {
+            const formData = {
+                name: document.getElementById('name').value,
+                description: document.getElementById('description').value,
+                link: document.getElementById('link').value,
+                ApiOwner: document.getElementById('apiOwner').value
+            };
+
+            fetch('/api/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.message);
+                if (data.newApi) {
+                    // Clear the form
+                    document.getElementById('name').value = '';
+                    document.getElementById('description').value = '';
+                    document.getElementById('link').value = '';
+                    document.getElementById('apiOwner').value = '';
+                }
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
+        }
+
+        function searchApiEndpoint(showAll = false) {
+            const searchQuery = showAll ? "" : document.getElementById('search').value;
+
+            fetch(`/market?search=${encodeURIComponent(searchQuery)}`)
+            .then(response => response.json())
+            .then(data => {
+                const resultsContainer = document.getElementById('searchResults');
+                resultsContainer.innerHTML = '';
+
+                data.forEach(api => {
+                    const apiEntry = document.createElement('div');
+                    apiEntry.innerHTML = `<strong>Name:</strong> ${api.name}<br>
+                                          <strong>Description:</strong> ${api.description}<br>
+                                          <strong>Link:</strong> <a href="${api.link}" target="_blank">${api.link}</a><button class="copy-button" onclick="copyToClipboard('${api.link}')">Copy Link</button><br>
+                                          <strong>Owner:</strong> ${api.ApiOwner}<br>`;
+                    resultsContainer.appendChild(apiEntry);
+                });
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(function() {
+                console.log('Async: Copying to clipboard was successful!');
+            }, function(err) {
+                console.error('Async: Could not copy text: ', err);
+            });
+        }
+    </script>
+    <p style="text-align: center; color: #fff;"> Owner of this site by Jonell Magallanes</p>
+</body>
+</html>

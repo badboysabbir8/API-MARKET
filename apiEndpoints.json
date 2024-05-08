@@ -1,0 +1,220 @@
+[
+  {
+    "name": "Pogi",
+    "description": "Pogian",
+    "link": "tes.api",
+    "ApiOwner": "Jonell Magallanes JONELL "
+  },
+  {
+    "name": "Bard Api",
+    "description": "Chat And Asking Questions With Bard Ai",
+    "link": "https://bard.kimjosephdgbien👍repl.co/api?ask=hi",
+    "ApiOwner": "Kim Joseph DG Bien "
+  },
+  {
+    "name": "Bard Api",
+    "description": "Bard Ai ",
+    "link": "https://pastebin.com/raw/nCW72b1a",
+    "ApiOwner": "Jonell Magallanes "
+  },
+  {
+    "name": "Sim api",
+    "description": "Chat with simini command ",
+    "link": "https://sim-api.nakelaqe.repl.co/sim?ask=",
+    "ApiOwner": "Jonell Magallanes "
+  },
+  {
+    "name": "Tiktok Api Search",
+    "description": "SEARCHING THE VIDEO AND USERNAME OF TIKTOK ",
+    "link": "https://pogi-kaba.haroldhutchapi.repl.co/tiktok/searchvideo?keywords=",
+    "ApiOwner": "Jonell Magallanes "
+  },
+  {
+    "name": "Shoti Api",
+    "description": "Random Videos of shoti",
+    "link": "https://api--v1-shoti.vercel.app/api/v1/get",
+    "ApiOwner": "Jan Liby Dela Costa"
+  },
+  {
+    "name": "Rule34",
+    "description": "Sending Random Pictures of Rule34",
+    "link": "https://rule34.xxx/index.php?page=dapi&s=post&q=index",
+    "ApiOwner": "Rule34 Website "
+  },
+  {
+    "name": "Rankup Gif API",
+    "description": "Rankup Gif ",
+    "link": "https://api4free.kenliejugarap.com/rankupv2?imglink=(Your Image link here)",
+    "ApiOwner": "Kenlie Jugarap "
+  },
+  {
+    "name": "Wallpaper Search",
+    "description": "Endpoint for searching wallpaper images via queries, returns wallpaper metadata in JSON for easy front-end integration.",
+    "link": "https://antr4x.onrender.com/get/searchwallpaper?keyword=ainz",
+    "ApiOwner": "SaikiDesu"
+  },
+  {
+    "name": "Danbooru",
+    "description": "Random danbooru endpoint returns random anime/manga-style image from large user-uploaded database.",
+    "link": "https://sampleapi-mraikero-01.vercel.app/get/danbooru",
+    "ApiOwner": "SaikiDesu"
+  },
+  {
+    "name": "Gelbooru Endpoint",
+    "description": "Random gelbooru image",
+    "link": "https://sampleapi-mraikero-01.vercel.app/get/gelbooru",
+    "ApiOwner": "SaikiDesu"
+  },
+  {
+    "name": "gptgo",
+    "description": "simple gptgo api made by ronald allen albania",
+    "link": "https://gptgo.cyni-boti.repl.co/ask?text=",
+    "ApiOwner": "ronald allen albania"
+  },
+  {
+    "name": "bard api",
+    "description": "simple bard api not image supported",
+    "link": "https://bard.cyni-boti.repl.co/ask?text=",
+    "ApiOwner": "Ronald allen albania"
+  },
+  {
+    "name": "pinger",
+    "description": "simple pinger/uptimer api",
+    "link": "https://pinger.cyni-boti.repl.co/addurl?url=",
+    "ApiOwner": "Ronald Allen Albania"
+  },
+  {
+    "name": "FB share booster",
+    "description": "1 second auto share, provide nyo token syempre",
+    "link": "https://kiritohayase.com/share?accessToken=${accessToken}&shareUrl=${shareUrl}&shareAmount=${shareAmount}",
+    "ApiOwner": "Jepoy Gabijan"
+  },
+  {
+    "name": "Gpt go",
+    "description": "Gpt go aoi",
+    "link": "https://free-api.chatbotcommunity.ltd/others/gpt?prompt=",
+    "ApiOwner": "Deku"
+  },
+  {
+    "name": "ddsd",
+    "description": "sds",
+    "link": "https://api-market-by-jonell-cc.hutchin.repl.co",
+    "ApiOwner": "test"
+  },
+  {
+    "name": "ddsd",
+    "description": "sds",
+    "link": "https://api-market-by-jonell-cc.hutchin.repl.co",
+    "ApiOwner": "sdsdsdsd"
+  },
+  {
+    "name": "M I L I T A R Y       V I D E O     A  P I  ",
+    "description": "API that response a RANDOM Military Video",
+    "link": "https://api.easy0.repl.co/api/random-military-video",
+    "ApiOwner": "ADONIS JR . S SANCHEZ [ I S O Y   D E Y   ]"
+  },
+  {
+    "name": "Random Nikke Pictures",
+    "description": "get your api key here ",
+    "link": "http://subzero.codebox4chan.repl.co/random/nikke?apiKey=replacethiswithyourapikey",
+    "ApiOwner": "Kenneth Panio"
+  },
+  {
+    "name": "Teach Api",
+    "description": "Teaching the simini command api",
+    "link": "https://sim-api.nakelaqe.repl.co/teach?ask=",
+    "ApiOwner": "Jonell Magallanes ",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Avatar Guard FB Profile",
+    "description": "get your token here in this website > http://subzero.codebox4chan.repl.co",
+    "link": "http://subzero.codebox4chan.repl.co/fbshield/token?=replacethiswithyourtoken",
+    "ApiOwner": "Kenneth Panio",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "avatar shield fb",
+    "description": "get api key in this website >> http://subzero.codebox4chan.repl.co",
+    "link": "http://subzero.codebox4chan.repl.co/fbshield/token?=replacethiswithyourfbtoken?apiKey=addyourapi key here",
+    "ApiOwner": "Kenneth Panio",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Safe Token Getter",
+    "description": "token getter for your shares",
+    "link": "https://replhome.codebox4chan.repl.co/fb/token?username=${emailoruid}&password=${password}",
+    "ApiOwner": "Six Eyes",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Haxor.ID",
+    "description": "Grab Vulnerable websites from haxorid",
+    "link": "https://replhome.codebox4chan.repl.co/api/haxor/${firstpagenumber}/${endpagenumber}",
+    "ApiOwner": "Reiko Dev",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Nikke",
+    "description": "Generates random url nikke pictures from goddess of victory game",
+    "link": "https://replhome.codebox4chan.repl.co/random/nikke",
+    "ApiOwner": "reiko dev",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Chatgpt",
+    "description": "Chatgpt asking ",
+    "link": "https://hazeyy-gpt4-api.kyrinwu.repl.co/api/gpt4/v-3beta?content=",
+    "ApiOwner": "Hello world ",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Api chargpt",
+    "description": "Chat with gpt",
+    "link": "https://api.kenliejugarap.com/ai/?text=test",
+    "ApiOwner": "Kenlie Jugarap ",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Boosting Site",
+    "description": "Abandoned Project",
+    "link": "https://replhome.codebox4chan.repl.co/",
+    "ApiOwner": "codebox4chan",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Codm",
+    "description": "RANDOM HIGHLIGHTS/ATTACHMENTS",
+    "link": "https://apicod11.api11.repl.co/codm/?apikey=opa",
+    "ApiOwner": "Zach ",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "taichi",
+    "description": "taichi",
+    "link": "https://pogi-kaba.haroldhutchapi.repl.co/tiktok/searchvideo?keywords=",
+    "ApiOwner": "taichi",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "PUBLIC API",
+    "description": "Free Public API",
+    "link": "https://subzero.codebox4chan.repl.co",
+    "ApiOwner": "Codebox4chan",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Tiktokdl/Tikdl/TiktokDownloadVideo",
+    "description": "Download tiktokdl video using this api",
+    "link": "https://tiktok-app-ph.onrender.com/tiktokdl/api?url=",
+    "ApiOwner": "Berwin",
+    "ip": "::ffff:172.31.196.1"
+  },
+  {
+    "name": "Styler",
+    "description": "post { title, content, titleFont, contentFont } and it will return result.",
+    "link": "https://lianeapi.onrender.com/api/styler",
+    "ApiOwner": "Lian",
+    "ip": "::ffff:172.31.196.1"
+  }
+]
